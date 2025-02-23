@@ -14,7 +14,7 @@ module.exports = async function listFiles(params) {
     let metadata = cache.getFileCache(activeFile);
     const exerciseIds = metadata.frontmatter['exercises'];
     const workout_id = metadata.frontmatter['id'];
-    const exercises = [];
+    let exercises = [];
 
     // Count performed exercises
     const performedEx = filterFiles((fm, tags)=>{
