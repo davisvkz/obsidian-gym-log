@@ -43,7 +43,7 @@ module.exports = async function listFiles(params) {
         exercises.push.apply(exercises, remainingEx);
     }
 
-    excercies = exercises.sort((a, b) => {
+    excercises = exercises.sort((a, b) => {
       const nameA = a.name.toLowerCase(); // ignore upper and lowercase
       const nameB = b.name.toLowerCase(); // ignore upper and lowercase
       if (nameA < nameB) {
